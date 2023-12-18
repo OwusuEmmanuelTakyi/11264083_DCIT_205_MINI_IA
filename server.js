@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const port = 4001; // Change the port number to 4000 or any available port
+const port = 4001; 
 import  express  from 'express';
 import {connectDb} from "./database/db.js"
 
-await connectDb("mongodb://127.0.0.1:")
+await connectDb("mongodb://localhost:27017/yourDatabaseName")
 
 export const server = express()
